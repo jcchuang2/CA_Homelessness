@@ -1,0 +1,123 @@
+.center_plot {
+    margin: auto;
+    text-align: center;
+}
+
+.left_plot {
+    margin: auto;
+    text-align: left;
+}
+
+.right_plot {
+    margin: auto;
+    text-align: right;
+}
+
+.parallax {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://centrepoint.org.uk/media/3177/emergency-cold-weather-blog-banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part1 {
+    background-color:rgba(66, 66, 66, 0.8);
+}
+
+#section2 {
+    background-color:rgba(75, 92, 104, 0.8);
+    display: flex;
+}
+
+#part2 {
+    width:50%;
+    /*float:left;*/
+    flex: 1;
+}
+
+#part3 {
+    width:50%;
+    /*float:right;*/
+    flex: 2;
+}
+
+#part4 {
+    background-color:rgba(66, 66, 66, 0.8);
+}
+
+#part5 {
+    background-color:rgba(75, 92, 104, 0.8);
+}
+
+.paragraph1 {
+    font-family: Optima;
+}
+
+.title {
+    text-align: center;
+    font-family: Optima;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    fill: white;
+}
+
+.body {
+    font-size: 20px;
+    fill: white;
+}
+
+div.tooltip {
+    position:absolute;
+    text-align:left;
+    width:"fit-content";
+    height:"fit-content";
+    color:white;
+    padding:5px;
+    background:rgb(46, 57, 65);/*#505050;*/
+    border-radius:7px;
+    pointer-events:none;
+}
+
+#value {
+    font-family: Optima;
+    fill:white;
+}
+
+.checkbox {
+    position: relative;
+    top: -120;
+    left: -840;
+}
+
+.button {
+    position: relative;
+    top: 600;
+}
+
+.boxlabel {
+    position: relative;
+    top: -120;
+    left: -840;
+    color:white;
+}
+
+.buttons {
+    position: relative;
+    color:white;
+    top: 700;
+    right: 0;
+}
+
+.buttonlabel {
+    position: relative;
+    color:white;
+    top: 700;
+}

@@ -1,0 +1,77 @@
+<html>  
+<head>  
+<script type="text/javascript" src="app.js">
+    </script>  
+<link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/d3-simple-slider"></script>
+
+</head>
+<body onload=project() style="margin: 0;">
+
+<div class="parallax">
+<div>
+<br>
+</div>
+<h1 class="title">Homelessness in California</h1>
+<p class="subtitle" style="margin-top: 0">Joshua Chuang</p>
+<div>
+    <div id="part1">
+        <div id="geoPlot" class="center_plot">
+            <input type="checkbox" class="checkbox" value="A" checked><label class="boxlabel"><1000</label>
+            <input type="checkbox" class="checkbox" value="B" checked><label class="boxlabel">≥1,000</label>
+            <input type="checkbox" class="checkbox" value="C" checked><label class="boxlabel">≥9,000</label>
+            
+        </div>
+        
+    </div>
+    
+    <div id="section2">
+        <div id="part2">
+            <div id="barPlot" class="center_plot">
+
+            </div>
+        </div>
+        <div id="part3">
+            <div id="scatterPlot" class="center_plot">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="part4">
+        <div id="streamGraph" class="center_plot">
+
+        </div>
+    </div>
+    <div id="part5">
+        <div id="boxPlot" class="center_plot">
+            <input type="radio" class="buttons" name="year" value="2015" checked="checked">
+            <label for="2015" class="buttonlabel">2015</label>
+            <input type="radio" class="buttons" name="year" value="2016">
+            <label for="2016" class="buttonlabel">2016</label>
+            <input type="radio" class="buttons" name="year" value="2017">
+            <label for="2017" class="buttonlabel">2017</label>
+            <input type="radio" class="buttons" name="year" value="2018">
+            <label for="2018" class="buttonlabel">2018</label>
+            <input type="radio" class="buttons" name="year" value="2019">
+            <label for="2019" class="buttonlabel">2019</label>
+            <input type="radio" class="buttons" name="year" value="2020">
+            <label for="2020" class="buttonlabel">2020</label>
+            <input type="radio" class="buttons" name="year" value="2021">
+            <label for="2021" class="buttonlabel">2021</label>
+            <input type="radio" class="buttons" name="year" value="2022">
+            <label for="2022" class="buttonlabel">2022</label>
+        </div>
+    </div>
+    <div style="margin-bottom:0;">
+        <p style="color:white; text-align:center;">In the geometric plot, I chose to use a lighter gray for the map to better emphasize the brighter orange circles that represented the data. I used circles as the marks, located on the county it represents, and changed its size and color to reflect the amount it represents. I added tooltip, a slider, and checkboxes to better visualize more data, like data over different years, and for the viewer to have more interaction with the visualization. Using this graph, we can see what areas of California, like the major urban areas of Los Angeles and the Bay Area having large amounts of homeless. Over the years, we see that the issue of homeless has only been increasing and requires change. Efforts to solve this issue should be focused on these areas of concentrated homelessness.</p>
+        <p style="color:white; text-align:center;">In the bar plot, I chose to use a three different colors for each bar in a group to help the viewer distinguish between the age groups. The marks in this visualization are the bars that have lengths that represent the counts and colors to represent which age group. The bars are also grouped into years so that the viewer can see how the data changes. We see that as the overall homeless count increases, so does each age group. The plot shows that homeless people tend to be older, which makes sense as younger people tend to be dependent on their parents or their guardians.</p>
+        <p style="color:white; text-align:center;">In the scatter plot, I used orange again to match the theme from the map visualization as well as be bright enough for the viewer to see the individual points. The marks are the individual points having horizontal and vertical positions to represent the data it visualizes. A tooltip was also added to this visualization for those who are curious about the actual values of the points and which year and county the values are from. Homelessness in veterans have been an issue that has been discussed for years. Making up a good portion of the homeless population in the US, we see this also in this plot where the number of homeless veterans are linearly correlated with the number of homeless in a county.</p>
+        <p style="color:white; text-align:center;">In the streamgraph, I chose a variety of bright colors that were easily distinguishable, even when some of the streams were small. The streamgraph has lines as its marks with the width of the lines changing to represent how many homeless it represents and color to represent which racial group it represents. In 2021, there is an overall dip in overall homeless numbers. This can be attributed to the global pandemic that may have affected data collection. The homeless counts seems pretty consistent over the years for each racial group. Some racial groups definitely make up more of the homeless population but this can be caused by differences in population size.</p>
+        <p style="color:white; text-align:center;">In the boxplot graph, I used the same orange I used in the map visualization and the scatterplot for the same reasons I used the color there. Each boxplot is a mark with its length of the lines and its length of the box representing the range of values it represents. The position of each boxplot also provides information on which racial group it represents and what values it includes. This plot supports the conclusions we found in the streamgraph. Each racial group have around the same number of homeless over the years, remaining largely unchanged. The white group remains the highest in homeless counts which is intuitive having the largest population in the state and in the nation.</p>
+</div>
+</div>   
+</div>
+</body>
+</html>
