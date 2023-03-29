@@ -141,7 +141,7 @@ var part1=function(filePath){
             svg.append('g')
             .attr('transform', 'translate(400,500)')
             .call(slider);
-            
+
             //add checkbox interactivity
             function update(){
                 d3.selectAll(".checkbox").each(function(d){
@@ -473,7 +473,7 @@ var part3=function(filePath){
 
 var part4=function(filePath){
     var width = 1000;
-    var height = 500;
+    var height = 600;
     var padding = 100;
 
     var svg = d3.select("#streamGraph")
@@ -617,6 +617,7 @@ var part5=function(filePath){
         var width = 1200;
         var height = 700;
         var padding = 100;
+        var bottom_padding = 200;
 
         var svg = d3.select("#boxPlot")
             .append("svg")
@@ -639,7 +640,7 @@ var part5=function(filePath){
             .paddingInner(1)
             .paddingOuter(.5)
         var xAxis = svg.append("g")
-            .attr("transform", "translate(0," + (height-padding) + ")")
+            .attr("transform", "translate(0," + (height-bottom_padding) + ")")
             .call(d3.axisBottom(x))
             .attr("color", "white")
             .selectAll("text")  
@@ -650,12 +651,12 @@ var part5=function(filePath){
             .attr("fill", "white")
             .attr("text-anchor", "middle")
             .attr("x", width/2)
-            .attr("y", height - padding + 50)
+            .attr("y", height-bottom_padding/2)
             .text("Racial Group");
 
         var y = d3.scaleLinear()
             .domain([-0.5, 1.5])
-            .range([height-padding, padding])
+            .range([height-bottom_padding, padding])
         var yAxis = svg.append("g")
             .attr("transform", "translate("+padding+",0)")
             .call(d3.axisLeft(y))

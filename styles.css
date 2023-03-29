@@ -95,6 +95,7 @@ div.tooltip {
     position: relative;
     top: -120;
     left: -840;
+    accent-color: #F28C28;
 }
 
 .button {
@@ -112,12 +113,12 @@ div.tooltip {
 .buttons {
     position: relative;
     color:white;
-    top: 700;
+    top: 650;
     right: 0;
 }
 
 .buttonlabel {
     position: relative;
     color:white;
-    top: 700;
+    top: 650;
 }
